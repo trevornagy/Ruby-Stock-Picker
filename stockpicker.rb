@@ -1,5 +1,4 @@
 def stock_picker(stock_prices)
-
   # initiating variables to first value which will be compared later on
   max_difference = stock_prices[1] - stock_prices[0]
   min_element = stock_prices[0]
@@ -11,7 +10,7 @@ def stock_picker(stock_prices)
       max_difference = price - min_element
       index_max_difference = [stock_prices.index(min_element), day,].to_s
     end
-    # set new minimum if the value is less than the
+    # set new minimum if the value is less than the current minimum
     if(price < min_element)
       min_element = price
     end
